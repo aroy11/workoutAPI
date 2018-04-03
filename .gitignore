@@ -14,3 +14,8 @@
 /FSD.WorkoutTracker.DataAccess/obj/Debug
 /FSD.WorkoutTracker.Tests/obj/Debug
 /packages
+/FSD.WorkoutTracker/obj/Release
+/FSD.WorkoutTracker.DataAccess/obj/Release
+/FSD.WorkoutTracker.Logger/obj/Release
+/FSD.WorkoutTracker.Models/obj/Release
+/FSD.WorkoutTracker.Tests/obj/Release
