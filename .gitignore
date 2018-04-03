@@ -3,3 +3,14 @@
 ################################################################################
 
 /.vs
+/FSD.WorkoutTracker/bin
+/FSD.WorkoutTracker/obj/Debug
+/FSD.WorkoutTracker.DataAccess/bin/Debug
+/FSD.WorkoutTracker.Logger/bin/Debug
+/FSD.WorkoutTracker.Logger/obj/Debug
+/FSD.WorkoutTracker.Models/obj/Debug
+/FSD.WorkoutTracker.Tests/bin/Debug
+/FSD.WorkoutTracker.Models/bin/Debug
+/FSD.WorkoutTracker.DataAccess/obj/Debug
+/FSD.WorkoutTracker.Tests/obj/Debug
+/packages
