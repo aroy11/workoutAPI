@@ -182,6 +182,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\WorkoutsController.cs" />
@@ -196,6 +197,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FSD.WorkoutTracker.Models.csproj" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -263,6 +265,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FSD.WorkoutTracker.DataAccess\FSD.WorkoutTracker.DataAccess.csproj">
+      <Project>{36BC9479-A3A3-49FF-8155-A685945661FD}</Project>
+      <Name>FSD.WorkoutTracker.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FSD.WorkoutTracker.Models\FSD.WorkoutTracker.Models.csproj">
       <Project>{3881088A-3BA6-470D-8CCB-6B5CDB82F086}</Project>
       <Name>FSD.WorkoutTracker.Models</Name>

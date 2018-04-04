@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace FSD.WorkoutTracker.Models
 {
@@ -12,4 +16,5 @@ namespace FSD.WorkoutTracker.Models
         public string CategoryName { get; set; }
         public List<Workout> Workouts { get; set; }
     }
+
 }

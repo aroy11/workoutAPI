@@ -1,4 +1,10 @@
-﻿namespace FSD.WorkoutTracker.Models
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FSD.WorkoutTracker.Models
 {
     public class Workout
     {
@@ -9,4 +15,5 @@
         public int CategoryId { get; set; }
         public WorkoutCategory Category { get; set; }
     }
+
 }

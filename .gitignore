@@ -19,3 +19,6 @@
 /FSD.WorkoutTracker.Logger/obj/Release
 /FSD.WorkoutTracker.Models/obj/Release
 /FSD.WorkoutTracker.Tests/obj/Release
+/FSD.WorkoutTracker.ExceptionHandling/obj/Debug
+/FSD.WorkoutTracker.ExceptionHandling/FSD.WorkoutTracker.ExceptionHandling.csproj
+/FSD.WorkoutTracker.ExceptionHandling
