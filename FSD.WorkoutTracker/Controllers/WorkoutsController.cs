@@ -9,6 +9,7 @@ using System.Web.Http.Cors;
 
 namespace FSD.WorkoutTracker.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class WorkoutsController : ApiController
     {
         // GET: api/Workouts
