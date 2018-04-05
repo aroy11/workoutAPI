@@ -1,5 +1,4 @@
-﻿using FSD.WorkoutTracker.DataAccess.Entities;
-using FSD.WorkoutTracker.Models;
+﻿using FSD.WorkoutTracker.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +8,7 @@ namespace FSD.WorkoutTracker.DataAccess
     public class WorkoutDAO
     {
 
-        public bool CreateWorkoutCollection(Workout workout)
+        public bool CreateWorkoutCollection(Models.Workout workout)
         {
             bool addWorkoutStatus = false;
             using (var dbContext = new WorkoutContext())
@@ -24,7 +23,7 @@ namespace FSD.WorkoutTracker.DataAccess
 
                 };
 
-                dbContext.Workouts.Add(workoutCollection);
+                dbContext.Workout_Collections.Add(workoutCollection);
                 dbContext.SaveChanges();
                 addWorkoutStatus = true;
 
@@ -32,12 +31,12 @@ namespace FSD.WorkoutTracker.DataAccess
             }
         }
 
-        public List<Workout> GetActiveWorkouts(string name)
+        public List<Models.Workout> GetActiveWorkouts(string name)
         {
             using (var dbContext = new WorkoutContext())
             {
-                List<Workout_Collection> workoutCollection = dbContext.Workouts.Where(i => (i.Workout_Title.StartsWith(name) || String.IsNullOrWhiteSpace(name))).ToList();
-                List<Workout> workouts = workoutCollection.Select(x => new Workout() { WorkoutId = x.Workout_Id, WorkoutTitle = x.Workout_Title }).ToList();
+                List<Workout_Collection> workoutCollection = dbContext.Workout_Collections.Where(i => (i.Workout_Title.StartsWith(name) || String.IsNullOrWhiteSpace(name))).ToList();
+                List<Models.Workout> workouts = workoutCollection.Select(x => new Models.Workout() { WorkoutId = x.Workout_Id, WorkoutTitle = x.Workout_Title }).ToList();
 
                 return workouts;
             }

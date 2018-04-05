@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace FSD.WorkoutTracker.DataAccess.Entities
+namespace FSD.WorkoutTracker.Core.Entities
 {
     public class Workout_Collection
     {

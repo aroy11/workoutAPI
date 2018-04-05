@@ -1,6 +1,9 @@
-﻿using FSD.WorkoutTracker.Models;
+﻿using FSD.WorkoutTracker.Core.Entities;
+using FSD.WorkoutTracker.DataAccess;
+using FSD.WorkoutTracker.Models;
 using System.Collections.Generic;
 using System.Web.Http;
+using System.Linq;
 using System.Web.Http.Cors;
 
 namespace FSD.WorkoutTracker.Controllers
@@ -8,16 +11,28 @@ namespace FSD.WorkoutTracker.Controllers
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class WorkoutsController : ApiController
     {
-        // GET: api/Workouts
-        public IEnumerable<Workout> Get()
+
+        private IRepository<Workout_Active> _workoutRepository = null;
+        public WorkoutsController()
         {
-            return new List<Workout>() { new Workout() { WorkoutId = 1, CategoryId = 3 } };
+            this._workoutRepository = new Repository<Workout_Active>();
+        }
+
+        public WorkoutsController(IRepository<Workout_Active> workoutRepository)
+        {
+            this._workoutRepository = workoutRepository;
+        }
+
+        // GET: api/Workouts
+        public IEnumerable<Workout_Active> Get()
+        {
+            return _workoutRepository.GetAll();
         }
 
         // GET: api/Workouts/5
-        public Workout Get(int id)
+        public Models.Workout Get(int id)
         {
-            return new Workout() { WorkoutId = 1, Category = new WorkoutCategory() { CategoryId = 5 } };
+            return new Models.Workout() { WorkoutId = 1, Category = new WorkoutCategory() { CategoryId = 5 } };
         }
 
         // POST: api/Workouts

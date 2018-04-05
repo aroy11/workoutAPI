@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace FSD.WorkoutTracker.DataAccess.Entities
+namespace FSD.WorkoutTracker.Core.Entities
 {
     public class Workout_Active
     {
@@ -20,7 +16,7 @@ namespace FSD.WorkoutTracker.DataAccess.Entities
         public string Comment { get; set; }
         public bool? Status { get; set; }
 
-        [Key, ForeignKey("workout_id")]
+        [Key, ForeignKey("Workout_Id")]
         public virtual Workout_Collection WorkoutCollection { get; set; }
 
     }

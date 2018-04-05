@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSD.WorkoutTracker.DataAcce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSD.WorkoutTracker.Logger", "FSD.WorkoutTracker.Logger\FSD.WorkoutTracker.Logger.csproj", "{44D84C5D-B4BE-4D05-8BF4-41D89982105B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSD.WorkoutTracker.Models", "FSD.WorkoutTracker.Models\FSD.WorkoutTracker.Models.csproj", "{3881088A-3BA6-470D-8CCB-6B5CDB82F086}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSD.Workout.Core", "FSD.Workout.Core\FSD.Workout.Core.csproj", "{748E24F3-E67D-433E-851C-DF2FBAB4F4A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{44D84C5D-B4BE-4D05-8BF4-41D89982105B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44D84C5D-B4BE-4D05-8BF4-41D89982105B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44D84C5D-B4BE-4D05-8BF4-41D89982105B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3881088A-3BA6-470D-8CCB-6B5CDB82F086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3881088A-3BA6-470D-8CCB-6B5CDB82F086}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3881088A-3BA6-470D-8CCB-6B5CDB82F086}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3881088A-3BA6-470D-8CCB-6B5CDB82F086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{748E24F3-E67D-433E-851C-DF2FBAB4F4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748E24F3-E67D-433E-851C-DF2FBAB4F4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748E24F3-E67D-433E-851C-DF2FBAB4F4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748E24F3-E67D-433E-851C-DF2FBAB4F4A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

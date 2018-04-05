@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FSD.WorkoutTracker.DataAccess.Entities
+namespace FSD.WorkoutTracker.Core.Entities
 {
     public class Workout_Category
     {
