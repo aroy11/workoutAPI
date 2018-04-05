@@ -102,10 +102,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CategoryControllerTest.cs" />
     <Compile Include="Controllers\WorkoutsControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\HomeControllerTest.cs" />
-    <Compile Include="Controllers\ValuesControllerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -117,6 +116,10 @@
     <ProjectReference Include="..\FSD.Workout.Core\FSD.Workout.Core.csproj">
       <Project>{748E24F3-E67D-433E-851C-DF2FBAB4F4A7}</Project>
       <Name>FSD.Workout.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSD.WorkoutTracker.DataAccess\FSD.WorkoutTracker.DataAccess.csproj">
+      <Project>{36BC9479-A3A3-49FF-8155-A685945661FD}</Project>
+      <Name>FSD.WorkoutTracker.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\FSD.WorkoutTracker\FSD.WorkoutTracker.csproj">
       <Project>{9A1F957D-D1E1-4BE8-884C-6CCFC97C3807}</Project>

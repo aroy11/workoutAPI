@@ -47,14 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CategoryDAO.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="WorkoutConfiguration.cs" />
     <Compile Include="WorkoutContext.cs" />
     <Compile Include="WorkoutDBInitialize.cs" />
-    <Compile Include="WorkoutInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

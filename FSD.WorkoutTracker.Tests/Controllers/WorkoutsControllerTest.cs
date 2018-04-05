@@ -1,6 +1,7 @@
 ﻿using FSD.WorkoutTracker.Controllers;
 using FSD.WorkoutTracker.Core.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 using System.Collections.Generic;
 
 namespace FSD.WorkoutTracker.Tests.Controllers
@@ -8,6 +9,7 @@ namespace FSD.WorkoutTracker.Tests.Controllers
     [TestClass]
     public class WorkoutsControllerTest
     {
+        
         [TestMethod]
         public void Get()
         {
