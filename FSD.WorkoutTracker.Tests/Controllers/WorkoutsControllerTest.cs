@@ -1,5 +1,5 @@
 ﻿using FSD.WorkoutTracker.Controllers;
-using FSD.WorkoutTracker.Models;
+using FSD.WorkoutTracker.Core.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 
@@ -15,7 +15,7 @@ namespace FSD.WorkoutTracker.Tests.Controllers
             WorkoutsController controller = new WorkoutsController();
 
             // Act
-            List<Workout> result = controller.Get() as List<Workout>;
+            List<Workout_Active> result = controller.Get() as List<Workout_Active>;
 
             // Assert
             Assert.IsNotNull(result);
@@ -29,10 +29,10 @@ namespace FSD.WorkoutTracker.Tests.Controllers
             WorkoutsController controller = new WorkoutsController();
 
             // Act
-            Workout workout = controller.Get(5);
+            Workout_Active workout = controller.Get(5);
 
             // Assert
-            Assert.AreEqual(5, workout.WorkoutId);
+            Assert.AreEqual(5, workout.Workout_Id);
         }
 
         [TestMethod]

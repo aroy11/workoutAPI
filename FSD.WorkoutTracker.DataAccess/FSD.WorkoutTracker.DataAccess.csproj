@@ -53,7 +53,6 @@
     <Compile Include="Repository.cs" />
     <Compile Include="WorkoutConfiguration.cs" />
     <Compile Include="WorkoutContext.cs" />
-    <Compile Include="WorkoutDAO.cs" />
     <Compile Include="WorkoutDBInitialize.cs" />
     <Compile Include="WorkoutInitializer.cs" />
   </ItemGroup>

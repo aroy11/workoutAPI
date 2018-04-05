@@ -1,9 +1,7 @@
 ﻿using FSD.WorkoutTracker.Core.Entities;
 using FSD.WorkoutTracker.DataAccess;
-using FSD.WorkoutTracker.Models;
 using System.Collections.Generic;
 using System.Web.Http;
-using System.Linq;
 using System.Web.Http.Cors;
 
 namespace FSD.WorkoutTracker.Controllers
@@ -30,9 +28,9 @@ namespace FSD.WorkoutTracker.Controllers
         }
 
         // GET: api/Workouts/5
-        public Models.Workout Get(int id)
+        public Workout_Active Get(int id)
         {
-            return new Models.Workout() { WorkoutId = 1, Category = new WorkoutCategory() { CategoryId = 5 } };
+            return new Workout_Active();
         }
 
         // POST: api/Workouts
