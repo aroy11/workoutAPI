@@ -56,7 +56,7 @@ namespace FSD.WorkoutTracker.Tests.Controllers
             CategoriesController controller = new CategoriesController(categoryRepository.Object);
 
             // Act
-            controller.Put(5, new Workout_Category());
+            controller.Put(new Workout_Category());
 
             // Assert
         }

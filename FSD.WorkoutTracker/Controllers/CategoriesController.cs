@@ -33,9 +33,8 @@ namespace FSD.WorkoutTracker.Controllers
         }
 
 
-        public void Put(int id, [FromBody]Workout_Category category)
+        public void Put([FromBody]Workout_Category category)
         {
-            category.Category_Id = id;
             _categoryRepository.Update(category);
         }
 
