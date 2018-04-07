@@ -33,7 +33,7 @@ Navigate to `http://localhost:8888/Help` in a browser to verify the WebAPI endpo
 
 ## Running unit tests
 
-Click 'Run All' in Test Explorer of Visual Studio to execute the unit tests VSTest test runner.  
+Click 'Run All' in Test Explorer of Visual Studio to execute the unit tests in VSTest test runner.  
 Unit tests added: 11/11 tests
 
 ## Git
