@@ -8,9 +8,9 @@ WebAPI: 2.2
 Entity Framework: 6.2.0  
 Microsoft.VisualStudio.QualityTools.UnitTestFramework: 15.0.2  
 Moq: 4.8  
-GIT client: 2.10.2
+GIT client: 2.10.2  
 Jenkins: 2.114  
-Web Deploy 3.6
+Web Deploy 3.6  
 IIS: 10.0.16299.15  
 
 ## Development server
