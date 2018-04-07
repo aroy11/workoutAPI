@@ -4,7 +4,7 @@
 # Stack
 
 .NET Framework: 4.5.2  
-WebAPI: 2.2
+WebAPI: 2.2  
 Entity Framework: 6.2.0  
 Microsoft.VisualStudio.QualityTools.UnitTestFramework: 15.0.2  
 Moq: 4.8  
@@ -34,7 +34,7 @@ Navigate to `http://localhost:8888/Help` in a browser to verify the WebAPI endpo
 Run `ng test` to execute the unit tests via [Karma].  
 Karma tests added: 11/11 specs
 
-## GIT
+## Git
 
 Version control management software used is GIT with a master branch and a feature development branch. When a feature is complete, the feature branch is merged back to the master.
 
