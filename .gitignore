@@ -24,3 +24,5 @@
 /FSD.WorkoutTracker.ExceptionHandling
 /FSD.Workout.Core/bin/Debug
 /FSD.Workout.Core/obj/Debug
+/FSD.WorkoutTrackerTests/obj/Debug
+/FSD.WorkoutTrackerTests

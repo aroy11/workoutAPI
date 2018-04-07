@@ -27,9 +27,9 @@ namespace FSD.WorkoutTracker.Controllers
         }
 
         [HttpPost]
-        public void AddCategories([FromBody]Workout_Category category)
+        public Workout_Category AddCategories([FromBody]Workout_Category category)
         {
-            _categoryRepository.Insert(category);
+            return _categoryRepository.Insert(category);
         }
 
 
