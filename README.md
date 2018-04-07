@@ -22,17 +22,19 @@ Open the solution FSD.WorkoutTracker.sln. Select FSD.WorkoutTracker web project 
 Click `Ctrl + Shift + B` to build the project. The build artifacts will be stored in the `bin` directory. Use the publish profile 'CustomProfile' to build the application in Release mode and deploy the build to IIS through Web Deploy.
 
 ## Jenkins
+
 Run `git push` to push the staged changes to remote repository. Jenkins will poll GIT SCM every 5 minutes to pull out the latest changes(if any), trigger a build and host the latest changes through Web Deploy in IIS.
 
 Job url: `http://localhost:8080/job/WorkoutTrackerAPI/`
 
 ## Production server
+
 Navigate to `http://localhost:8888/Help` in a browser to verify the WebAPI endpoints are up and running in IIS.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma].  
-Karma tests added: 11/11 specs
+Click 'Run All' in Test Explorer of Visual Studio to execute the unit tests VSTest test runner.  
+Unit tests added: 11/11 tests
 
 ## Git
 
